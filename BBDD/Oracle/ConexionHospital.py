@@ -4,7 +4,7 @@ bd_conexion = bd.connect(host='localhost', port='1521',
                                    user='system', password='MRomHerr', database='hospital')
 cursor = bd_conexion.cursor()
 try:
-    cursor.execute("SELECT apellido,oficio,salario FROM emp")
+    cursor.execute("SELECT APELLIDO, OFICIO, SALARIO FROM EMP")
 
     for ape, ofi, sal in cursor:
         print("Apellido: " + ape)
